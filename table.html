@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    table {
+      border-collapse: collapse;
+    }
+    td {
+      border: 1px solid black;
+      padding: 5px;
+    }
+    .image-container {
+      display: none; /* Initially hide the image */
+    }
+    
+  #image {
+      width: 300px;
+      height: 300px;
+    }
+  </style>
+  <script>
+    function displayImage(imagePath) {
+      var imageContainer = document.getElementById('image-container');
+      var imageElement = document.getElementById('image');
+      imageElement.src = imagePath;
+      imageContainer.style.display = 'block';
+    }
+  </script>
+</head>
+<body>
+  <table>
+    <tr>
+      <td onclick="displayImage('https://freepngimg.com/save/3958-porsche-car-logo-png-brand-image/781x1020')">Porsche</td>
+      <td rowspan="100">
+        <div id="image-container">
+          <img id="image" src="">
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td onclick="displayImage('https://freepngimg.com/thumb/symbol/91644-maserati-car-luxury-vehicle-logo-line-thumb.png')">Maserati</td>
+    </tr>
+    <tr>
+      <td onclick="displayImage('https://www.carlogos.org/logo/Rolls-Royce-logo-640x550.jpg')">RollsRoyce</td>
+    </tr>
+    <!-- Add more rows as needed -->
+  </table>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background-color: #C2F1FF;
+    }
+    .content {
+      display: none; /* Initially hide the content */
+    }
+    table {
+      border-collapse: collapse;
+    }
+    td {
+      border: 1px solid black;
+      padding: 5px;
+    }
+    img {
+      width: 200px;
+      height: 200px;
+    }
+    .descriptor {
+      text-align: center;
+      margin-top: 10px;
+    }
+  </style>
+  <script>
+    function showContent(event) {
+      var content = event.target.parentNode.querySelector('.content');
+      if (content.style.display === 'block') {
+        content.style.display = 'none';
+      } else {
+        content.style.display = 'block';
+      }
+    }
+  </script>
+</head>
+<body>
+  <div class="descriptor">
+    <h1>Descriptor</h1>
+  </div>
+  <table>
+    <tr>
+      <td>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvgMLOpGRsDIkLZ6xx9sz3ZsbCI1_WF5aVOg&usqp=CAU" alt="Image with Sanji" onclick="showContent(event)">
+        <h2>SANJI</h2>
+        <div class="content">
+          Vinsmoke Sanji <br> Cook<br> Black Leg
+        </div>
+      </td>
+      <td>
+        <img src="https://static1.personality-database.com/profile_images/ccf6e0eb874e478fa15ac69600cd1706.png" onclick="showContent(event)">
+        <h2>LUFFY</h2>
+        <div class="content">
+          Monkey D Luffy <br> Captain<br> Straw hat
+        </div>
+      </td>
+      <td>
+        <img src="https://pbs.twimg.com/media/FsEOdF9aEAAE-6W.jpg" onclick="showContent(event)">
+        <h2>ZORO</h2>
+        <div class="content">
+          Roronoa Zoro <br> Swordsmen<br> King Of Hell
+        </div>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>
