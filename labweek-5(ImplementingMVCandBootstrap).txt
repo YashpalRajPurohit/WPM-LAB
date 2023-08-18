@@ -1,0 +1,56 @@
+Implementing MVC architecture and working with Bootstrap
+
+Creating MVC
+
+-> Create a folder named app_server in the myExpressApp folder
+
+-> Create two more folders named models and controllers in app_server
+
+-> Cut the views and routes folder from myExpressApp and paste them in app_server
+
+-> In app.js make the following changes
+
+  7.  var indexRouter = require('./app_server/routes/index');
+  8.  var userRouter = require('./app_server/routes/users');
+
+  13. app.set('views', path.join(__dirname, 'app_server', 'views'));
+
+-> Create a new file called main.js in app_server/controllers
+
+-> In this file create and export a method called index
+
+-> Update the routes file to use external controllers
+
+
+_____________________________________________________
+main.js
+
+const index = (req, res)=>{
+      res.render('index', {title: 'BookTangle'}));
+};
+module.exports={
+index
+};
+_____________________________________________________
+index.js
+
+var express = require('express');
+var router = express.Router();
+var ctrlMain = require('../controllers/main');
+
+router.get('/',ctrlMain.index);
+module.exports = router;
+_____________________________________________________
+
+
+
+
+Downloading Bootstrap
+
+-> Download bootstrap from https://getbootstrap.com , Make sure to download 'ready to use files' and not the source
+
+-> The distributuon zip contains two folders: css and js
+
+-> Copy bootstrap.min.css into your public/stylesheets folder
+
+-> Copy bootstrap.min.js into your public/js folder 

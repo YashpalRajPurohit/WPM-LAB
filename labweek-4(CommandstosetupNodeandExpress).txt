@@ -1,0 +1,25 @@
+Command to setup node and express
+
+-> Create a file named loc8r(myExpressApp)
+
+-> open the file in Visual Studio Code
+ 
+-> open new terminal and check node version 
+   $node --version
+
+-> Install express 
+   $npm install -g express-generator
+
+-> Check express version 
+   $express --version
+
+-> Create an application 
+   $express --view = pug --git
+
+-> Install the dependencies
+   $npm install
+
+-> Launch the application
+   $SET DEBUG = myExpressApp:*;npm start
+
+-> Application will run on port:3000 
