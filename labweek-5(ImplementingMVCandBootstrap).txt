@@ -26,7 +26,7 @@ _____________________________________________________
 main.js
 
 const index = (req, res)=>{
-      res.render('index', {title: 'BookTangle'}));
+      res.render('index', {title: 'BookTangle'});
 };
 module.exports={
 index

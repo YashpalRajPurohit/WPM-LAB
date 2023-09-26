@@ -1,92 +1,103 @@
 <!DOCTYPE html>
 <html>
-    <style>
-        body {
-            background-color:#5663f2;
-            max-width: 45%;
-            margin: auto;
-            font-family: system-ui;
-        }
-        #formtitle{
-            display: block;
-            margin: auto;
-            width: fit-content;
-            padding-left:15px;
-            padding-right:15px;
-            border-radius:12px;
-            color:#000000;
-            background-color:#DDE6ED;
-        }
-        #formcontent{
-            border-radius: 15px;
-            background-color: #E3F4F4;
-            padding-top: 10px;
-            padding-bottom: 10px;
-            padding-left: 15px;
-            padding-right: 15px;
-            margin: 20px;
-        }
-        #submitbutton{
-            display: block;
-            margin: auto;
-            width:100px;
-        }
-        p{
-            margin-bottom: 4px;
-        }
-        select,input{
-            height: 20px;
-            width: fit-content;
-            border-radius: 5px;
-            border-color: #9ecee8;
-            margin-bottom: 5px;
-            margin-left: 2px;
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
-        }
-    </style>
-    <script>
-        function myFunction() {
-          alert("Successfully submitted");
-        }
-    </script>
-    <head>
-        <title>Application Form</title>
-    </head>
-    <body>
-        <div id="formtitle"><h1>Application Form</h1></div>
-        <hr>
-        <div id="formcontent">
+<style>
+    body {
+        background-color: #5663f2;
+        max-width: 45%;
+        margin: auto;
+        font-family: system-ui;
+    }
+
+    #formtitle {
+        display: block;
+        margin: auto;
+        width: fit-content;
+        padding-left: 15px;
+        padding-right: 15px;
+        border-radius: 12px;
+        color: #000000;
+        background-color: #DDE6ED;
+    }
+
+    #formcontent {
+        border-radius: 15px;
+        background-color: #E3F4F4;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 15px;
+        padding-right: 15px;
+        margin: 20px;
+    }
+
+    #submitbutton {
+        display: block;
+        margin: auto;
+        width: 100px;
+    }
+
+    p {
+        margin-bottom: 4px;
+    }
+
+    select,
+    input {
+        height: 20px;
+        width: fit-content;
+        border-radius: 5px;
+        border-color: #9ecee8;
+        margin-bottom: 5px;
+        margin-left: 2px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+</style>
+<script>
+    function myFunction() {
+        alert("Successfully submitted");
+    }
+</script>
+
+<head>
+    <title>Application Form</title>
+</head>
+
+<body>
+    <div id="formtitle">
+        <h1>Application Form</h1>
+    </div>
+    <hr>
+    <div id="formcontent">
         <form action="">
-        <p><label name="Name">Full Name</label></p>
-        <input type="text" for="Name">
-        <p>
-        <label name="gender">Gender</label>
-        <select name="gender">
-            <option> select </option>
-            <option> Male </option>
-            <option> Female </option>
-            <option> Other </option>
-        </select>
-        </p>
-        <p>Year</p>
-        <div class="yy">
-        <input type="radio" class="oney" name="year"><label for="oney">1</label>
-        <input type="radio" class="twoy" name="year"><label for="twoy">2</label>
-        <input type="radio" class="threey" name="year"><label for="threey">3</label>
-        <input type="radio" class="foury" name="year"><label for="foury">4</label>
-        </div>
-        <p>Branch</p>
-        <input type="text">
-        <p>Birth Date</p>
-        <input type="date">
-        <p>Address</p>
-        <input type="text" size="50">
-        <p>Email Address</p>
-        <input type="email">
-        <p>Phone Number</p>
-        <input type="tel">
-        <p><input onclick="myFunction()" id="submitbutton" type="submit" value="submit"></p>    
+            <p><label name="Name">Full Name</label></p>
+            <input type="text" for="Name">
+            <p>
+                <label name="gender">Gender</label>
+                <select name="gender">
+                    <option> select </option>
+                    <option> Male </option>
+                    <option> Female </option>
+                    <option> Other </option>
+                </select>
+            </p>
+            <p>Year</p>
+            <div class="yy">
+                <input type="radio" class="oney" name="year"><label for="oney">1</label>
+                <input type="radio" class="twoy" name="year"><label for="twoy">2</label>
+                <input type="radio" class="threey" name="year"><label for="threey">3</label>
+                <input type="radio" class="foury" name="year"><label for="foury">4</label>
+            </div>
+            <p>Branch</p>
+            <input type="text">
+            <p>Birth Date</p>
+            <input type="date">
+            <p>Address</p>
+            <input type="text" size="50">
+            <p>Email Address</p>
+            <input type="email">
+            <p>Phone Number</p>
+            <input type="tel">
+            <p><input onclick="myFunction()" id="submitbutton" type="submit" value="submit"></p>
         </form>
-        </div>
-    </body>
+    </div>
+</body>
+
 </html>
